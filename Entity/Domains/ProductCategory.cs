@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entity.Domains.SysEntities
+namespace Entity.Domains
 {
     public class ProductCategory
     {

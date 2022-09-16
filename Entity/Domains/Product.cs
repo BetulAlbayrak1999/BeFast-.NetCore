@@ -1,5 +1,4 @@
 ﻿using Entity.Domains.BaseEntities;
-using Entity.Domains.SysEntities;
 using Entity.Enums;
 using System;
 using System.Collections.Generic;
