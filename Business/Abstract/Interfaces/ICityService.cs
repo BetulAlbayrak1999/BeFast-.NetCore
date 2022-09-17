@@ -1,4 +1,5 @@
-﻿using DataAccess.Abstract.Common;
+﻿using Business.Dtos;
+using DataAccess.Abstract.Common;
 using Entity.Domains;
 using System;
 using System.Collections.Generic;
@@ -11,16 +12,16 @@ namespace Business.Abstract.Interfaces
 {
     public interface ICityService 
     {
-        Task<bool> AddAsync(CreateCityDto createCityDto);
-        Task<bool> AddRangeAsync(List<CreateCityDto> createCityDtos);
-        Task<bool> UpdateAsync(UpdateCityDto updateCityDto);
-        Task<bool> RemoveAsync(Guid id);
-        List<GetCityDto> GetAll(Func<IQueryable<City>, IOrderedQueryable<City>> orderBy = null, bool checkstatus = false, bool tracking = true);
-        Task<GetCityDto> GetSingleAsync(Expression<Func<City, bool>> expression, bool checkstatus = false, bool tracking = true);
+        Task<bool> AddAsync(CityDto cityDto);
+        Task<bool> AddRangeAsync(List<CityDto> cityDtos);
+        Task<bool> UpdateAsync(CityDto cityDto);
+        Task<bool> RemoveAsync(int id);
+        List<CityDto> GetAll(Func<IQueryable<City>, IOrderedQueryable<City>> orderBy = null, bool checkstatus = false, bool tracking = true);
+        Task<CityDto> GetSingleAsync(Expression<Func<City, bool>> expression, bool checkstatus = false, bool tracking = true);
 
-        Task<List<GetCityDto>> GetAllWithInclude(Expression<Func<City, bool>> predicate, bool checkstatus = false, bool tracking = true, Func<IQueryable<City>, IOrderedQueryable<City>> orderBy = null, params Expression<Func<City, object>>[] includes);
+        Task<List<CityDto>> GetAllWithIncludeAsync(Expression<Func<City, bool>> predicate, bool checkstatus = false, bool tracking = true, Func<IQueryable<City>, IOrderedQueryable<City>> orderBy = null, params Expression<Func<City, object>>[] includes);
 
-        Task<GetCityDto> GetSingleWtihInclude(Expression<Func<City, bool>> predicate, bool checkstatus = false, bool tracking = true, params Expression<Func<City, object>>[] includes);
+        Task<CityDto> GetSingleWtihIncludeAsync(Expression<Func<City, bool>> predicate, bool checkstatus = false, bool tracking = true, params Expression<Func<City, object>>[] includes);
 
     }
 }
