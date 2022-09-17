@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Concrete\Services\" />
     <Folder Include="Configurations\Mappers\" />
     <Folder Include="Configurations\Extensions\" />
     <Folder Include="Configurations\Exceptions\" />
