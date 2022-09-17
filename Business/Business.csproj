@@ -33,4 +33,10 @@
     <ProjectReference Include="..\Entity\Entity.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Dtos\CountryDto.cs">
+      <CustomToolNamespace>Dto</CustomToolNamespace>
+    </Compile>
+  </ItemGroup>
+
 </Project>
