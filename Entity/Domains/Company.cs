@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Entity.Domains
 {
-    public class Company: BaseEntityNoIdentity<int>
+    public class Company: BaseEntityNoIdentity
     {
         public string Name { get; set; }
         public string WorkingTime { get; set; }

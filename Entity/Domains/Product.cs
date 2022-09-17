@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Entity.Domains
 {
-    public class Product: BaseEntityNoIdentity<int>
+    public class Product: BaseEntityNoIdentity
     {
         public int CompanyId { get; set; }
         [ForeignKey(nameof(CompanyId))]

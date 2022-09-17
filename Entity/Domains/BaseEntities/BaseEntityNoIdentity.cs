@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Entity.Domains.BaseEntities
 {
-    public class BaseEntityNoIdentity<T>
+    public abstract class BaseEntityNoIdentity
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

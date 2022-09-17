@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Entity.Domains.BaseEntities
 {
-    public class BaseEntityIdentityUser : IdentityUser
+    public abstract class BaseEntityIdentityUser : IdentityUser
     {
 
         [ScaffoldColumn(false)]
