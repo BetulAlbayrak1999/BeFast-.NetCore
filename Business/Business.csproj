@@ -7,13 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Abstract\Interfaces\" />
     <Folder Include="Concrete\Services\" />
-    <Folder Include="Configrations\Mappers\" />
-    <Folder Include="Configrations\Extensions\" />
-    <Folder Include="Configrations\Exceptions\" />
-    <Folder Include="Configrations\Filters\" />
-    <Folder Include="Configrations\Validations\" />
+    <Folder Include="Configurations\Mappers\" />
+    <Folder Include="Configurations\Extensions\" />
+    <Folder Include="Configurations\Exceptions\" />
+    <Folder Include="Configurations\Filters\" />
+    <Folder Include="Configurations\Validations\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +27,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+    <ProjectReference Include="..\Entity\Entity.csproj" />
   </ItemGroup>
 
 </Project>
